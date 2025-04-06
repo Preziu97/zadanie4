@@ -62,7 +62,6 @@ results = pd.DataFrame({
 results['Ranga_TOPSIS'] = results['TOPSIS_score'].rank(ascending=False).astype(int)
 results['Ranga_SPOTIS'] = results['SPOTIS_score'].rank(ascending=True).astype(int)
 
-# === DODANE: Wyświetlenie informacji o kryteriach ===
 print("=== KRYTERIA ===")
 for name, typ, w in zip(criteria_names, criteria_types, weights):
     typ_text = "maksymalizowane" if typ == 1 else "minimalizowane"
