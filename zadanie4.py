@@ -42,7 +42,7 @@ norm_matrix = manual_minmax_normalization(decision_matrix, criteria_types)
 topsis = TOPSIS()
 topsis_scores = topsis(norm_matrix, weights, criteria_types)
 
-# 7. SPOTIS – teraz poprawnie przekazujemy bounds w konstruktorze
+# 7. SPOTIS
 bounds = np.array([
     [90000, 130000],    # koszt
     [40000, 80000],     # zysk
